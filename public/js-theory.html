@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS - theory</title>
+  <link rel="stylesheet" href="./assets/bootstrap.min.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">JS - interview</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                JavaScript
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="js-theory.html">Theory</a>
+                <a class="dropdown-item" href="js-practice.html">Practice</a>
+              </div>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">JS - theory</li>
+        </ol>
+      </nav>
+    </header>
+    <main>
+      <div class="conteiner">
+        <div class="accordion" id="accordionExample">
+
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h2 class="mb-0">
+                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+                  data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  В чем разница между null и undefined?
+                </button>
+              </h2>
+            </div>
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+              <div class="card-body">
+                <h3>Для начала давайте поговорим о том, что у них общего</h3>
+                <p>Во-первых, они принадлежат к 7 «примитивам» (примитивным типам) JS: 'string', 'number', 'null',
+                  'undefined', 'boolean', 'symbol', 'bigint'</p>
+                <p>Во-вторых, они являются ложными значениями, т.е. результатом их преобразования в логическое значение
+                  с помощью Boolean() или оператора "!!" является false</p>
+                <h3>Ладно, теперь о различиях</h3>
+                <p>
+                  undefined («неопределенный») представляет собой значение по умолчанию:
+                <ul>
+                  <li>переменной, которой не было присвоено значения, т.е. объявленной, но не инициализированной
+                    переменной;</li>
+                  <li>функции, которая ничего не возвращает явно, например, console.log(1);</li>
+                  <li>несуществующего свойства объекта.</li>
+                </ul>
+                </p>
+                <p>null — это «значение отсутствия значения». null — это значение, которое присваивается переменной
+                  явно.</p>
+                <p>При сравнении null и undefined мы получаем true, когда используем оператор "==", и false при
+                  использовании оператора "===".</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer fixed-bottom">
+      &copy; 2020 KlimovCode
+    </footer>
+  </div>
+
+  <script src="./assets/jquery.min.js"></script>
+  <script src="./assets/bootstrap.min.js"></script>
+</body>
+
+</html>
