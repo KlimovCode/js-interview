@@ -40,6 +40,6 @@ export const JsTheory = () => {
         </div>
       </div>
       Разница между параметром и аргументом у финкции.
-    </div> {/* end .container */ }
+    </div>
   )
 }
