@@ -1,0 +1,25 @@
+{
+  "name": "js-interview",
+  "version": "1.0.0",
+  "description": "js interview",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KlimovCode/js-interview.git"
+  },
+  "author": " <klimovcode@mail.ru>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KlimovCode/js-interview/issues"
+  },
+  "homepage": "https://github.com/KlimovCode/js-interview#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3"
+  }
+}
